@@ -105,8 +105,6 @@ const createCard = (data) => {
 	let deep = '';
 
 	if (data) {
-		console.log(data);
-
 		deep = `
 		<h3 class="agent">${data.gate}</h3>
 		<div class="ticket__wrapper">
@@ -236,7 +234,6 @@ getData(CITIES_API, (data) => {
 		if (a.name > b.name) {
 			return 1;
 		}
-		// names must be equal
 		return 0;
 	});
 });
